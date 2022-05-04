@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+
+/* ------------------- GENERAL ------------------ */
+
+
+
+/* ---------------------------NAVBAR---------------------------- */
+
+
+.enLineaNavbar{
+    list-style-type: none;
+}
+
+.enLineaNavbar li{
+    margin-left: 20px;
+}
+#navbarFM{
+    padding: 5px;
+}
+
+#logoFM{
+    width: 300px;
+}
+
+#navbarContacto{
+    background-color: #24368c;
+    color: white;
+}
+
+#navbarContacto i{
+    padding: 0;
+}
+
+#collapsibleNavbar{
+    justify-content: flex-end;
+}
+
+/* --------------------------- SECCIÓN ---------------------------- */
+
+#seccion{
+    padding: 1rem;
+    padding-left: 3rem;
+    font-size: 1.2rem;
+    background-color: #373737;
+}
+
+
+ /* -------------------------- INDEX ----------------------------- */   
+
+ /* ---- CAROUSEL ---- */
+#carouselSize{
+    width: 100%;
+    height: 600px;
+}
+
+.carousel-indicators li{
+    height: 15px;
+    background-color: #24368c;
+    border: #373737;
+}
+
+.containerFlexImg{
+    height: 80%;
+    width: 80%;
+    padding: 1rem;
+    border: #b6234b solid 2px;
+    border-radius: 20%;
+}
+
+.estiloMVV{
+    padding-left: 1rem;
+    border-left: #24368c solid 4px;
+}
+
+.seccionExperiencias{
+    background-image: url(../Multimedia/family1.jpg);
+    background-color: rgb(70, 70, 70);
+    background-blend-mode: soft-light;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+
+
+/* ---------------------------   NOSOTROS   ------------------------------ */
+
+    .grid-quienesomos {
+        grid-area: grid-quienesomos;
+        }
+
+    
+    .grid-quienesomos h3{
+        margin: 3rem;
+    }
+    .nosotrosFlex{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .item1_QuienesSomos{
+        height: auto;
+        width: 800px;
+        background-color: white;
+        border-left: #24368c solid 3px;
+        padding: 3rem;
+        margin: 1%;
+        border-radius: 5%;
+    }
+    .item2_QuienesSomos{
+        height: 350px;
+        width: 350px;
+        background-image: url(../Multimedia/delamano.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: #24368c solid 2px;
+        border-radius: 1%;
+    }
+
+    .grid-masNuestrosServicios {
+        grid-area: grid-masNuestrosServicios;
+        background-color: #373737;
+          color: white;
+          display: flex;
+          justify-content: space-around;
+          align-items: center; 
+    }
+
+    .grid-masNuestrosServicios p{
+        align-items: flex-start;
+    }
+
+    .grid-masNuestrosServicios a{
+        background-color:#24368c;
+        padding: 1.5rem;
+        color: white;
+        align-items: flex-end;
+        border-radius: 10%;
+    }
+
+    .grid-nuestroStaff {
+        grid-area: grid-nuestroStaff;
+        }
+        .grid-nuestroStaff h3{
+            margin: 3rem;
+        }
+
+        .nosotrosFlexStaff{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+    
+        .item1_Staff{
+            height: 500px;
+            width: 500px;
+            background-image: url(../Multimedia/NuestroStaff.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: #24368c solid 2px;
+            border-radius: 5%;
+        }
+        .item2_Staff{
+            height: auto;
+            width: 500px;
+            background-color: white;
+            border-left: #24368c solid 3px;
+            padding: 3rem;
+            margin: 1%;
+            border-radius: 1%;
+            
+        }
+        
+    
+
+
+
+
+/* --------------------------- CONTACTO ---------------------------- */
+
+#mapaContacto{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 70vh;
+}
+
+/* --------------------------- SINIESTROS ---------------------------- */
+
+
+input{
+    transition: all 1s;
+}
+
+input:focus{
+    font-size: 24px;
+    border: 3px solid #b6234b;
+    color: #24368c;
+}
+
+/* --------------------------- SERVICIOS ---------------------------- */
+
+.card{
+    border-top: #24368c solid 3px;
+    border-bottom:#b6234b solid 3px;
+    border-radius: 3%;
+}
+
+
+
+
+/* ---------------------------   FOOTER   ------------------------------ */ 
+
+.footerFM{
+    background-color: #b6234b;
+    color: white;
+}
+
+.footerFM a{
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.seguinos{
+    font-size: 3rem;
+}
+
+.seguinos li{
+    list-style-type: none;
+}
+
+.footerFM div{
+    padding: 1.5rem;
+}
+
+.footerFM h4{
+    font-weight: bolder;
+}
+
+
