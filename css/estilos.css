@@ -11,6 +11,18 @@
   margin-right: 0px;
 }
 
+#azul {
+  color: #24368c;
+}
+
+#rojo {
+  color: #b6234b;
+}
+
+#negro {
+  color: #373737;
+}
+
 #fondoOscuro {
   background-color: #373737;
 }
@@ -33,6 +45,11 @@
 
 #navbarFM {
   padding: 5px;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 #logoFM {
@@ -72,6 +89,57 @@
   border: #373737;
 }
 
+#bucle-1 {
+  border-bottom: solid 4px;
+  border-color: #344dc9;
+}
+
+#bucle-2 {
+  border-bottom: solid 4px;
+  border-color: #6f82da;
+}
+
+#bucle-3 {
+  border-bottom: solid 4px;
+  border-color: #acb7ea;
+}
+
+.box--red1 {
+  background-color: rgba(55, 55, 55, 0.5);
+  border-bottom: 3px solid rgb(232, 102, 16);
+  text-align: center;
+  font-size: 30px;
+  color: #ededed;
+  text-transform: uppercase;
+  border-radius: 2px;
+  justify-content: center;
+  align-items: center;
+}
+
+.box--red2 {
+  background-color: rgba(55, 55, 55, 0.5);
+  border-bottom: 3px solid #24368c;
+  text-align: center;
+  font-size: 30px;
+  color: #ededed;
+  text-transform: uppercase;
+  border-radius: 2px;
+  justify-content: center;
+  align-items: center;
+}
+
+.box--red3 {
+  background-color: rgba(55, 55, 55, 0.5);
+  border-bottom: 3px solid rgb(235, 235, 34);
+  text-align: center;
+  font-size: 30px;
+  color: #ededed;
+  text-transform: uppercase;
+  border-radius: 2px;
+  justify-content: center;
+  align-items: center;
+}
+
 .containerFlexImg {
   height: 80%;
   width: 80%;
@@ -86,7 +154,7 @@
 }
 
 .seccionExperiencias {
-  background-image: url(../multimedia/family1.jpg);
+  background-image: url(../Multimedia/family1.jpg);
   background-color: rgb(70, 70, 70);
   background-blend-mode: soft-light;
   background-position: center;
@@ -99,6 +167,22 @@
 #deLaMano {
   height: 200px;
   width: 200px;
+  background-image: url(../multimedia/delamano.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-bottom: #24368c solid 3px;
+  margin-bottom: 3px;
+}
+
+.clientesBox {
+  width: 200px;
+  transition: box-shadow 0.3s;
+  background-color: #ededed;
+}
+
+.clientesBox:hover {
+  box-shadow: 0px 10px 10px #373737;
 }
 
 /* --------------------------- CONTACTO ---------------------------- */
@@ -129,7 +213,10 @@ input:focus {
 
 /* ---------------------------   FOOTER   ------------------------------ */
 .footerFM {
-  background-color: #b6234b;
+  background-image: url(../multimedia/fondos/fondo-footer.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
 }
 .footerFM a {

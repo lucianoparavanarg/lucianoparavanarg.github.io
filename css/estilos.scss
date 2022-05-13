@@ -8,10 +8,20 @@
 $color1:#24368c;
 $color2:#b6234b;
 $color3:#373737;
+$color4:#ededed;
 
 /* ------------------- GENERAL ------------------ */
 .margenDerecho{
     margin-right: 0px;
+}
+#azul{
+    color: $color1;
+}
+#rojo{
+    color: $color2;
+}
+#negro{
+    color: $color3;
 }
 
 #fondoOscuro{
@@ -38,6 +48,11 @@ $color3:#373737;
 
 #navbarFM{
     padding: 5px;
+}
+
+.nav-link{
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 #logoFM{
@@ -81,6 +96,41 @@ $color3:#373737;
     border: $color3;
 }
 
+$base-color: #24368c;  
+
+@for $in from 1 through 3 {
+
+    #bucle-#{$in} {
+        // border-color: $color2;
+        border-bottom: solid 4px;
+        border-color: lighten($base-color, $in * 15%);
+    }
+}
+
+$redes: (
+    red1: rgb(232, 102, 16),
+    red2: #24368c,
+    red3: rgb(235, 235, 34),
+    );
+
+@each $red, $font in $redes  {
+    .box--#{$red}{
+        background-color: rgb(55, 55, 55, 0.5);
+        // height: 100px;
+        // width: 75%;
+        border-bottom: 3px solid $font;
+        text-align: center;
+        font-size: 30px;
+        color:#ededed;
+        text-transform: uppercase;
+        border-radius: 2px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
 .containerFlexImg{
     height: 80%;
     width: 80%;
@@ -110,7 +160,47 @@ $color3:#373737;
 #deLaMano{
     height: 200px;
     width: 200px;
+    background-image: url(../multimedia/delamano.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-bottom: $color1 solid 3px;
+    margin-bottom: 3px;
 }
+
+// @mixin rectangulo {
+//     background-color: $color3;
+//     opacity: .5;
+//     width: 400px;
+//     height: 200px;
+//     text-align: center;
+//     color: $color4;
+// }
+
+// .rectangulo1{
+//     @include rectangulo()
+
+// }
+// .rectangulo2{
+//     border-bottom: $color2 solid 2px;
+// }
+
+// .rectangulo3{
+//     border-bottom: $color4 solid 2px;
+// }
+
+.clientesBox{
+    width: 200px;
+    transition: box-shadow .3s;
+    background-color: $color4;
+}
+.clientesBox:hover{
+    box-shadow: 0px 10px 10px $color3;
+}
+
+
+
+
 
 /* --------------------------- CONTACTO ---------------------------- */
 
@@ -122,6 +212,8 @@ $color3:#373737;
 }
 
 /* --------------------------- SINIESTROS ---------------------------- */
+
+
 
 input{
     transition: all 1s;
@@ -141,10 +233,16 @@ input:focus{
     border-radius: 3%;
 }
 
+
+
 /* ---------------------------   FOOTER   ------------------------------ */ 
 
 .footerFM{
-    background-color: $color2;
+    background-image: url(../multimedia/fondos/fondo-footer.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-color: $color2;
     color: white;
     a{
         color: white;
