@@ -2,8 +2,9 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
-  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* ------------------- GENERAL ------------------ */
@@ -35,10 +36,19 @@
   background-color: #24368c;
 }
 
+#bordeAzul {
+  border-bottom: #24368c solid 0.6rem;
+}
+
+.bordeAzul {
+  border-bottom: #24368c solid 0.6rem;
+}
+
 /* ---------------------------NAVBAR---------------------------- */
 .enLineaNavbar {
   list-style-type: none;
 }
+
 .enLineaNavbar li {
   margin-left: 20px;
 }
@@ -60,12 +70,24 @@
   background-color: #24368c;
   color: white;
 }
+
 #navbarContacto i {
   padding: 0;
 }
 
 #collapsibleNavbar {
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.active {
+  color: #b6234b;
+  border-bottom: 3px solid #b6234b;
+  width: 100%;
+  border-radius: 1px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 /* --------------------------- SECCIÓN ---------------------------- */
@@ -105,47 +127,63 @@
 }
 
 .box--red1 {
-  background-color: rgba(55, 55, 55, 0.5);
-  border-bottom: 3px solid rgb(232, 102, 16);
+  background-color: rgba(55, 55, 55, 0.37);
+  border-bottom: 3px solid #e86610;
   text-align: center;
   font-size: 30px;
   color: #ededed;
   text-transform: uppercase;
   border-radius: 2px;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .box--red2 {
-  background-color: rgba(55, 55, 55, 0.5);
+  background-color: rgba(55, 55, 55, 0.37);
   border-bottom: 3px solid #24368c;
   text-align: center;
   font-size: 30px;
   color: #ededed;
   text-transform: uppercase;
   border-radius: 2px;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .box--red3 {
-  background-color: rgba(55, 55, 55, 0.5);
-  border-bottom: 3px solid rgb(235, 235, 34);
+  background-color: rgba(55, 55, 55, 0.37);
+  border-bottom: 3px solid #ebeb22;
   text-align: center;
   font-size: 30px;
   color: #ededed;
   text-transform: uppercase;
   border-radius: 2px;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .containerFlexImg {
-  height: 80%;
-  width: 80%;
-  padding: 1rem;
+  height: 400px;
+  width: 400px;
+  padding: 4rem;
   border: #b6234b solid 2px;
-  border-radius: 20%;
+  border-radius: 5%;
+  background-image: url(../multimedia/family2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .estiloMVV {
@@ -155,7 +193,7 @@
 
 .seccionExperiencias {
   background-image: url(../Multimedia/family1.jpg);
-  background-color: rgb(70, 70, 70);
+  background-color: #464646;
   background-blend-mode: soft-light;
   background-position: center;
   background-size: cover;
@@ -163,26 +201,112 @@
   color: white;
 }
 
+.boxAseguradora1 {
+  width: 160px;
+  height: 150px;
+  padding: 1rem;
+  border-bottom: #24368c solid 2px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(../multimedia/aseguradoras/sancor-jpg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.boxAseguradora2 {
+  width: 160px;
+  height: 150px;
+  padding: 1rem;
+  border-bottom: #24368c solid 2px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(../multimedia/aseguradoras/mercantil-andina-jpg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.boxAseguradora3 {
+  width: 160px;
+  height: 150px;
+  padding: 1rem;
+  border-bottom: #24368c solid 2px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(../multimedia/aseguradoras/prevencion-salud-jpg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.boxAseguradora4 {
+  width: 160px;
+  height: 150px;
+  padding: 1rem;
+  border-bottom: #24368c solid 2px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(../multimedia/aseguradoras/prevencion-trabajo-jpg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.boxAseguradora5 {
+  width: 160px;
+  height: 150px;
+  padding: 1rem;
+  border-bottom: #24368c solid 2px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(../multimedia/aseguradoras/seguros-rivadavia-jpg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 /* ---------------------------   NOSOTROS   ------------------------------ */
 #deLaMano {
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
   background-image: url(../multimedia/delamano.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   border-bottom: #24368c solid 3px;
-  margin-bottom: 3px;
+}
+
+.boxStaffImg {
+  width: 450px;
+  height: 350px;
+  background-image: url(../multimedia/nuestro-staff.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#saberMas {
+  font-size: 2rem;
 }
 
 .clientesBox {
   width: 200px;
-  transition: box-shadow 0.3s;
+  -webkit-transition: -webkit-box-shadow .3s;
+  transition: -webkit-box-shadow .3s;
+  transition: box-shadow .3s;
+  transition: box-shadow .3s, -webkit-box-shadow .3s;
   background-color: #ededed;
 }
 
 .clientesBox:hover {
-  box-shadow: 0px 10px 10px #373737;
+  -webkit-box-shadow: 0px 10px 10px #373737;
+          box-shadow: 0px 10px 10px #373737;
 }
 
 /* --------------------------- CONTACTO ---------------------------- */
@@ -195,6 +319,7 @@
 
 /* --------------------------- SINIESTROS ---------------------------- */
 input {
+  -webkit-transition: all 1s;
   transition: all 1s;
 }
 
@@ -219,14 +344,20 @@ input:focus {
   background-size: cover;
   color: white;
 }
+
+.footerFM li {
+  list-style: none;
+}
+
 .footerFM a {
   color: white;
   text-decoration: none;
-  list-style-type: none;
 }
+
 .footerFM div {
   padding: 1.5rem;
 }
+
 .footerFM h4 {
   font-weight: bolder;
 }
@@ -234,8 +365,8 @@ input:focus {
 .seguinos {
   font-size: 3rem;
 }
+
 .seguinos li {
   list-style-type: none;
 }
-
 /*# sourceMappingURL=estilos.css.map */

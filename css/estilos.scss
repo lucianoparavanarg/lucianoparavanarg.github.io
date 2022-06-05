@@ -35,6 +35,18 @@ $color4:#ededed;
 #fondoAzul{
     background-color: $color1;
 }
+
+#bordeAzul{
+    border-bottom: $color1 solid 0.6rem;
+}
+
+.bordeAzul{
+    border-bottom: $color1 solid 0.6rem;
+}
+
+.font4{
+    font-size: 4rem;
+}
 /* ---------------------------NAVBAR---------------------------- */
 
 
@@ -70,6 +82,14 @@ $color4:#ededed;
 
 #collapsibleNavbar{
     justify-content: flex-end;
+}
+
+#active{
+    color: $color2;
+    border-bottom: 3px solid $color2;
+    width: 100%;
+    border-radius: 1px;
+    transition: 0.5s ease;
 }
 
 /* --------------------------- SECCIÓN ---------------------------- */
@@ -115,7 +135,7 @@ $redes: (
 
 @each $red, $font in $redes  {
     .box--#{$red}{
-        background-color: rgb(55, 55, 55, 0.5);
+        background-color:rgba(55, 55, 55, 0.37);
         // height: 100px;
         // width: 75%;
         border-bottom: 3px solid $font;
@@ -130,13 +150,16 @@ $redes: (
 }
 
 
-
 .containerFlexImg{
-    height: 80%;
-    width: 80%;
-    padding: 1rem;
+    height: 400px;
+    width: 400px;
+    padding: 4rem;
     border: $color2 solid 2px;
-    border-radius: 20%;
+    border-radius: 5%;
+    background-image: url(../multimedia/family2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .estiloMVV{
@@ -154,40 +177,74 @@ $redes: (
     color: white;
 }
 
+@mixin boxAseguradoras{
+    width: 160px;
+    height: 150px;
+    padding: 1rem;
+    border-bottom: $color1 solid 2px;
+    justify-content: center;
+}
 
+@mixin boxImg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.boxAseguradora1{
+    @include boxAseguradoras;
+    background-image: url(../multimedia/aseguradoras/sancor-jpg.jpg);
+    @include boxImg;
+}
+
+.boxAseguradora2{
+    @include boxAseguradoras;
+    background-image: url(../multimedia/aseguradoras/mercantil-andina-jpg.png);
+    @include boxImg;
+}
+
+.boxAseguradora3{
+    @include boxAseguradoras;
+    background-image: url(../multimedia/aseguradoras/prevencion-salud-jpg.png);
+    @include boxImg;
+}
+
+.boxAseguradora4{
+    @include boxAseguradoras;
+    background-image: url(../multimedia/aseguradoras/prevencion-trabajo-jpg.jpg);
+    @include boxImg;
+}
+
+.boxAseguradora5{
+    @include boxAseguradoras;
+    background-image: url(../multimedia/aseguradoras/seguros-rivadavia-jpg.jpg);
+    @include boxImg;
+}
 
 /* ---------------------------   NOSOTROS   ------------------------------ */
+
 #deLaMano{
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
     background-image: url(../multimedia/delamano.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     border-bottom: $color1 solid 3px;
-    margin-bottom: 3px;
 }
 
-// @mixin rectangulo {
-//     background-color: $color3;
-//     opacity: .5;
-//     width: 400px;
-//     height: 200px;
-//     text-align: center;
-//     color: $color4;
-// }
+.boxStaffImg{
+    width: 450px;
+    height: 350px;
+    background-image: url(../multimedia/nuestro-staff.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-// .rectangulo1{
-//     @include rectangulo()
-
-// }
-// .rectangulo2{
-//     border-bottom: $color2 solid 2px;
-// }
-
-// .rectangulo3{
-//     border-bottom: $color4 solid 2px;
-// }
+#saberMas{
+    font-size: 2rem;
+}
 
 .clientesBox{
     width: 200px;
@@ -244,10 +301,12 @@ input:focus{
     background-size: cover;
     // background-color: $color2;
     color: white;
+    li{
+        list-style: none;
+    }
     a{
         color: white;
         text-decoration: none;
-        list-style-type: none;
     }
     div{
         padding: 1.5rem;

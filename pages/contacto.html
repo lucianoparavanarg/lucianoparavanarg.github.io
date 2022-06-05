@@ -4,7 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Contacto</title>
+
+    <meta name="description" content="Contactate con nosotros para consultarnos lo que necesites">
+    <meta name="keywords" content="fallabrinomedei, seguros, contacto, sancor seguros, sancor, mercantil andina, prevencion salud, riesgos de trabajo, seguros rivadavia, tranquilidad, seguro de auto, seguro de hogar, hogar, auto, coche, moto, barco, casa, campo, salud, enfermedad, asegurar, covid, riesgos, trabajo, art">
+
+    <meta name="language" content="Spanish">
+    <meta name="country" content="Argentina">
+    <meta name="city" content="Santa Fe">
+
     <link rel="shortcut icon" href="../multimedia/simbolo-logo.png">
     
     <script src="https://kit.fontawesome.com/11325fcdef.js" crossorigin="anonymous"></script>
@@ -53,7 +62,7 @@
                         <a class="nav-link" href="../pages/servicios.html">Servicios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        <a class="nav-link active" id="rojo" href="../pages/contacto.html">Contacto</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../pages/siniestros.html">Siniestros</a>
@@ -65,7 +74,7 @@
 
     <div style="background-color: #373737;">
         <div class="container-fluid text-white" id="seccion">
-            <h2>Siniestros</h2>
+            <h2>Contacto</h2>
         </div>
     </div>
 
@@ -85,33 +94,34 @@
                     <p>Complete el formulario o comuníquese con Fallabrino Medei a través que cualquiera de nuestros canales disponibles.</p>
                 </div>
                 <div class="shadow-sm p-5">
-                    <h4 style="color: #24368c;">Datos de <span class="font-weight-bold">contacto</span></h4>
+                    <h4 id="azul">Datos de <span class="font-weight-bold">contacto</span></h4>
                     <p>Dirección: Hernandarias 2031 Santo Tomé</p>
                     <p>Teléfono: 0342 480-1842</p>
                     <p>Email: info@fallabrinomedei.com.ar</p>
                 </div>
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-6 shadow-sm mb-3 p-3">
-                <h4 class="font-weight-bold">Contáctenos</h4>
+                <h4 class="font-weight-bold" id="azul">Contáctenos</h4>
                 <form>
-                    <label for="nombre" class="form-label">Nombre</label><br>
+                    <label for="nombre" class="form-label" id="rojo">Nombre</label><br>
                     <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Ingrese su nombre"><br>
-                    <label for="apellido" class="form-label">Apellido</label><br>
+                    <label for="apellido" class="form-label" id="rojo">Apellido</label><br>
                     <input type="text" name="apellido" id="apellido" class="form-control" placeholder="Ingrese su apellido"><br>
-                    <label for="email" class="form-label">E-mail</label><br>
+                    <label for="email" class="form-label" id="rojo">E-mail</label><br>
                     <input type="text" name="email" id="email" class="form-control" placeholder="Ingrese su email"><br>
-                    <label for="telefono" class="form-label">Telefono</label><br>
+                    <label for="telefono" class="form-label" id="rojo">Telefono</label><br>
                     <input type="text" name="telefono" id="telefono" placeholder="Ingrese su telefono"><br>
-                    <label for="mensaje" class="form-label">Mensaje</label><br>
+                    <label for="mensaje" class="form-label mt-2" id="rojo">Mensaje</label><br>
                     <textarea name="mensaje" id="mensaje" placeholder="Ingrese su mensaje" class="form-control" cols="30" rows="10"></textarea>
+                    <div class="mb-3 col-12">
+                            
+                        <input type="submit" name="" id="" class="btn btn-primary btn-block mt-3" value="Enviar">
+                        
+                    </div>
                 </form>
             </div>
         </div>
-        <div class="mb-3 col-12">
-                            
-            <input type="submit" name="" id="" class="btn btn-primary btn-block" value="Enviar">
-            
-        </div>
+        
     </section>
 
 
@@ -126,13 +136,13 @@
     
             <div class="col-12 col-sm-12 col-md-6 col-lg-3">
             <h4>Mapa de Sitio</h4>
-                <div class="list-group list-group-flush">
+                <div class="list-group list-group-flush p-1">
                     <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                        <li><a href="./pages/servicios.html">Servicios</a></li>
-                        <li><a href="./pages/contacto.html">Contacto</a></li>
-                        <li><a href="./pages/siniestros.html" class="active">Siniestros</a></li>
+                        <li class="mb-2"><a href="../index.html">Home</a></li>
+                        <li class="mb-2"><a href="./pages/nosotros.html">Nosotros</a></li>
+                        <li class="mb-2"><a href="./pages/servicios.html">Servicios</a></li>
+                        <li class="mb-2"><a href="./pages/contacto.html">Contacto</a></li>
+                        <li class="mb-2"><a href="./pages/siniestros.html" class="active">Siniestros</a></li>
                     </ul>
                 </div>
             </div>
